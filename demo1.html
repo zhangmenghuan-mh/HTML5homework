@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            margin: 0 auto;
+        }
+        .con>div{
+            height: 60px;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+        .first{
+            background-color: red;
+        }
+        .second{
+            background-color: blue;
+        }
+        .third{
+            background-color: black;
+        }
+        .forth{
+            background-color: orange;
+        }
+        @media screen and (min-width:1200px){
+            .con{
+                width: 100%;
+            }
+            .first{
+                width: 25%;
+            }
+            .second{
+                width: 25%;
+            }
+            .third{
+                width: 25%;
+            }
+            .forth{
+                width: 25%;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .con{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .first{
+                width: 100%;
+            }
+            .second{
+                width: 33.3%;
+            }
+            .third{
+                width: 33.3%;
+            }
+            .forth{
+                width: 33.3%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            .con{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .first{
+                width: 50%;
+            }
+            .second{
+                width: 50%;
+            }
+            .third{
+                width: 50%;
+            }
+            .forth{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:768px){
+            .con{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .first{
+                width: 100%;
+            }
+            .second{
+                width: 100%;
+            }
+            .third{
+                width: 100%;
+            }
+            .forth{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="forth">4</div>
+    </div>
+</body>
+</html>
